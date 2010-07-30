@@ -1,0 +1,5 @@
+rootProject.name = 'design-patterns'
+
+include("abstract-factory-pattern")
+include("build-pattern")
+include("factory-method-pattern")

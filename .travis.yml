@@ -1,0 +1,12 @@
+language: java
+jdk:
+- oraclejdk8
+- openjdk8
+before_install:
+- chmod +x gradlew
+- chmod +x gradlew.bat
+script:
+- "./gradlew test"
+notifications:
+  slack:
+    secure: OOcvDG650UkyYeztqNBnlkG4aVqpU5Ui3zU6ou4fr/s/eLea5Q3ft6X/llziDJk0FBxuRd8fOtSmc6/1tmHK8b3CEYymFeB1zJ32Xxdxf3nj+jewxdgCBFkG3qwGZrFS2EMg/2rnGcKLdqPZAwDR2JPYg2LSFVT46S8s66i5Ri4=

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="BuilderDesignPattern">
+  <packagedElement xmi:type="uml:Package" xmi:id="_uXt-sJyWEd-jBIufmwooqQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_uXvz4JyWEd-jBIufmwooqQ" name="rayyildiz">
+      <packagedElement xmi:type="uml:Package" xmi:id="_uXvz4ZyWEd-jBIufmwooqQ" name="patterns">
+        <packagedElement xmi:type="uml:Association" xmi:id="_udHcEJyWEd-jBIufmwooqQ" memberEnd="_uYs2IJyWEd-jBIufmwooqQ _udHcEZyWEd-jBIufmwooqQ">
+          <ownedEnd xmi:id="_udHcEZyWEd-jBIufmwooqQ" name="Cook" type="_uX1TcJyWEd-jBIufmwooqQ" association="_udHcEJyWEd-jBIufmwooqQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_udHcEpyWEd-jBIufmwooqQ" memberEnd="_uY5qcJyWEd-jBIufmwooqQ _udHcE5yWEd-jBIufmwooqQ">
+          <ownedEnd xmi:id="_udHcE5yWEd-jBIufmwooqQ" name="CoffeeBuilder" type="_uX2hkJyWEd-jBIufmwooqQ" association="_udHcEpyWEd-jBIufmwooqQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_uX0sYJyWEd-jBIufmwooqQ" name="TurkishCoffeeBuilder" clientDependency="_qySToJyXEd-jBIufmwooqQ">
+          <generalization xmi:id="_uYKqoJyWEd-jBIufmwooqQ" general="_uX2hkJyWEd-jBIufmwooqQ"/>
+          <generalization xmi:id="_l1MHgJyXEd-jBIufmwooqQ" general="_uX490JyWEd-jBIufmwooqQ"/>
+          <ownedOperation xmi:id="_uYTNgJyWEd-jBIufmwooqQ" name="buildTastyCoffee" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_uX1TcJyWEd-jBIufmwooqQ" name="Cook">
+          <ownedAttribute xmi:id="_uYs2IJyWEd-jBIufmwooqQ" name="coffeeBuilder" visibility="private" type="_uX2hkJyWEd-jBIufmwooqQ" association="_udHcEJyWEd-jBIufmwooqQ"/>
+          <ownedOperation xmi:id="_uYyVsJyWEd-jBIufmwooqQ" name="setCoffeeBuilder" visibility="public">
+            <ownedComment xmi:id="_uY0x8JyWEd-jBIufmwooqQ">
+              <body>/** 
+ * @param coffeeBuilder the coffeeBuilder to set
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_uYyVsZyWEd-jBIufmwooqQ" name="coffeeBuilder" type="_uX2hkJyWEd-jBIufmwooqQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_uY1ZAJyWEd-jBIufmwooqQ" name="getCoffee" visibility="public">
+            <ownedParameter xmi:id="_uY1ZAZyWEd-jBIufmwooqQ" name="return" type="_uX490JyWEd-jBIufmwooqQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_uY2nIJyWEd-jBIufmwooqQ" name="constructCoffee" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_uX2hkJyWEd-jBIufmwooqQ" name="CoffeeBuilder" isAbstract="true">
+          <ownedAttribute xmi:id="_uY5qcJyWEd-jBIufmwooqQ" name="coffee" visibility="private" type="_uX490JyWEd-jBIufmwooqQ" association="_udHcEpyWEd-jBIufmwooqQ"/>
+          <ownedOperation xmi:id="_uY6RgJyWEd-jBIufmwooqQ" name="getCoffee" visibility="public">
+            <ownedComment xmi:id="_uY7foJyWEd-jBIufmwooqQ">
+              <body>/** 
+ * @return the coffee
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_uY6RgZyWEd-jBIufmwooqQ" name="return" type="_uX490JyWEd-jBIufmwooqQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_uY7foZyWEd-jBIufmwooqQ" name="createCoffee" visibility="public"/>
+          <ownedOperation xmi:id="_uY8twJyWEd-jBIufmwooqQ" name="buildTastyCoffee" visibility="public" isAbstract="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_uX490JyWEd-jBIufmwooqQ" name="Coffee">
+          <ownedAttribute xmi:id="_ucS8sJyWEd-jBIufmwooqQ" name="colour" visibility="private"/>
+          <ownedAttribute xmi:id="_ucXOIJyWEd-jBIufmwooqQ" name="sugar" visibility="private"/>
+          <ownedAttribute xmi:id="_ucctsJyWEd-jBIufmwooqQ" name="price" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ucg_IJyWEd-jBIufmwooqQ" name="name" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_uckCcJyWEd-jBIufmwooqQ" name="getName" visibility="public">
+            <ownedComment xmi:id="_ucl3oJyWEd-jBIufmwooqQ">
+              <body>/** 
+ * @return the name
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_uckCcZyWEd-jBIufmwooqQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ucl3oZyWEd-jBIufmwooqQ" name="setName" visibility="public">
+            <ownedComment xmi:id="_ucns0JyWEd-jBIufmwooqQ">
+              <body>/** 
+ * @param name the name to set
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ucl3opyWEd-jBIufmwooqQ" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ucoT4JyWEd-jBIufmwooqQ" name="getColour" visibility="public">
+            <ownedComment xmi:id="_ucqJEJyWEd-jBIufmwooqQ">
+              <body>/** 
+ * @return the colour
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ucoT4ZyWEd-jBIufmwooqQ" name="return" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ucqwIJyWEd-jBIufmwooqQ" name="setColour" visibility="public">
+            <ownedComment xmi:id="_ucvBkJyWEd-jBIufmwooqQ">
+              <body>/** 
+ * @param colour the colour to set
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ucqwIZyWEd-jBIufmwooqQ" name="colour"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ucvBkZyWEd-jBIufmwooqQ" name="getSugar" visibility="public">
+            <ownedComment xmi:id="_ucxd0JyWEd-jBIufmwooqQ">
+              <body>/** 
+ * @return the sugar
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ucvooJyWEd-jBIufmwooqQ" name="return" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ucyr8JyWEd-jBIufmwooqQ" name="setSugar" visibility="public">
+            <ownedComment xmi:id="_uc0hIJyWEd-jBIufmwooqQ">
+              <body>/** 
+ * @param sugar the sugar to set
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ucyr8ZyWEd-jBIufmwooqQ" name="sugar"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_uc1IMJyWEd-jBIufmwooqQ" name="getPrice" visibility="public">
+            <ownedComment xmi:id="_uc8c8JyWEd-jBIufmwooqQ">
+              <body>/** 
+ * @return the price
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_uc1IMZyWEd-jBIufmwooqQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_uc9EAJyWEd-jBIufmwooqQ" name="setPrice" visibility="public">
+            <ownedComment xmi:id="_udCjkJyWEd-jBIufmwooqQ">
+              <body>/** 
+ * @param price the price to set
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_uc9EAZyWEd-jBIufmwooqQ" name="price">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_udDKoJyWEd-jBIufmwooqQ" name="toString" visibility="public">
+            <ownedParameter xmi:id="_udDKoZyWEd-jBIufmwooqQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_uX6zAJyWEd-jBIufmwooqQ" name="BrazilianCoffeeBuilder" clientDependency="_qJLsQJyXEd-jBIufmwooqQ">
+          <generalization xmi:id="_udFm4JyWEd-jBIufmwooqQ" general="_uX2hkJyWEd-jBIufmwooqQ"/>
+          <generalization xmi:id="_k75vEJyXEd-jBIufmwooqQ" general="_uX490JyWEd-jBIufmwooqQ"/>
+          <ownedOperation xmi:id="_udGN8JyWEd-jBIufmwooqQ" name="buildTastyCoffee" visibility="public"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_qJLsQJyXEd-jBIufmwooqQ" name="Dependency1" supplier="_uX490JyWEd-jBIufmwooqQ" client="_uX6zAJyWEd-jBIufmwooqQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_qySToJyXEd-jBIufmwooqQ" name="Dependency2" supplier="_uX490JyWEd-jBIufmwooqQ" client="_uX0sYJyWEd-jBIufmwooqQ"/>
+</uml:Model>

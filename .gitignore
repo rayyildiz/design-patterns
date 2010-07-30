@@ -9,3 +9,7 @@
 *.swp
 *.out
 
+.idea/
+.gradle/
+build/
+out/
