@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="AbstractFactoryPattern">
+  <packagedElement xmi:type="uml:Package" xmi:id="_2kMYsJwZEd-s49wK3mEA6g" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_2kM_wJwZEd-s49wK3mEA6g" name="rayyildiz">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2kM_wZwZEd-s49wK3mEA6g" name="patterns">
+        <packagedElement xmi:type="uml:Association" xmi:id="_2pOCoJwZEd-s49wK3mEA6g" memberEnd="_2pOpsJwZEd-s49wK3mEA6g">
+          <ownedEnd xmi:id="_2pOpsJwZEd-s49wK3mEA6g" name="Application" association="_2pOCoJwZEd-s49wK3mEA6g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_2kTGYJwZEd-s49wK3mEA6g" name="AbstractFactory">
+          <ownedOperation xmi:id="_2okiYJwZEd-s49wK3mEA6g" name="createAddress" visibility="public">
+            <ownedParameter xmi:id="_2okiYZwZEd-s49wK3mEA6g" name="return" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3pU0wJwZEd-s49wK3mEA6g" name="Address" isAbstract="true">
+          <ownedAttribute xmi:id="_3sqcoJwZEd-s49wK3mEA6g" name="city" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_3sxKUJwZEd-s49wK3mEA6g" name="address" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_3syYcJwZEd-s49wK3mEA6g" name="getCountryCode" visibility="package" isAbstract="true">
+            <ownedParameter xmi:id="_3syYcZwZEd-s49wK3mEA6g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_3s67UJwZEd-s49wK3mEA6g" name="getCity" visibility="public">
+            <ownedComment xmi:id="_3s8wgJwZEd-s49wK3mEA6g">
+              <body>/** 
+ * @return the city
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_3s7iYJwZEd-s49wK3mEA6g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_3s9XkJwZEd-s49wK3mEA6g" name="setCity" visibility="public">
+            <ownedComment xmi:id="_3tBpAJwZEd-s49wK3mEA6g">
+              <body>/** 
+ * @param city the city to set
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_3s9XkZwZEd-s49wK3mEA6g" name="city">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_3tCQEJwZEd-s49wK3mEA6g" name="getAddress" visibility="public">
+            <ownedComment xmi:id="_3tEFQJwZEd-s49wK3mEA6g">
+              <body>/** 
+ * @return the address
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_3tCQEZwZEd-s49wK3mEA6g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_3tEsUJwZEd-s49wK3mEA6g" name="setAddress" visibility="public">
+            <ownedComment xmi:id="_3tF6cJwZEd-s49wK3mEA6g">
+              <body>/** 
+ * @param address the address to set
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_3tEsUZwZEd-s49wK3mEA6g" name="address">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_3tGhgJwZEd-s49wK3mEA6g" name="toString" visibility="public">
+            <ownedParameter xmi:id="_3tGhgZwZEd-s49wK3mEA6g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_4REKMJwZEd-s49wK3mEA6g" name="Application">
+          <ownedAttribute xmi:id="_4UeqkJwZEd-s49wK3mEA6g" name="_factory" visibility="package">
+            <type xmi:type="uml:Interface" href="../../../../AbstractFactoryPattern.uml#_4Q_4wJwZEd-s49wK3mEA6g"/>
+            <association href="../../../../AbstractFactoryPattern.uml#_4UmmYJwZEd-s49wK3mEA6g"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_4Ul_UJwZEd-s49wK3mEA6g" name="show" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_4okEMZwZEd-s49wK3mEA6g" name="Main">
+          <ownedOperation xmi:id="_4qFuMJwZEd-s49wK3mEA6g" name="main" visibility="public" isStatic="true">
+            <ownedComment xmi:id="_4qG8UJwZEd-s49wK3mEA6g">
+              <body>/** 
+ * @param args
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_4qFuMZwZEd-s49wK3mEA6g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_481EAJwZEd-s49wK3mEA6g" name="TurkeyAddress">
+          <generalization xmi:id="_4-pB4JwZEd-s49wK3mEA6g">
+            <general xmi:type="uml:Class" href="../../../../AbstractFactoryPattern.uml#_481rEJwZEd-s49wK3mEA6g"/>
+          </generalization>
+          <ownedOperation xmi:id="_4-pB4ZwZEd-s49wK3mEA6g" name="getCountryCode" visibility="package">
+            <ownedParameter xmi:id="_4-pB4pwZEd-s49wK3mEA6g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_5Uy4EJwZEd-s49wK3mEA6g" name="TurkeyFactory" clientDependency="_5YFcoJwZEd-s49wK3mEA6g">
+          <interfaceRealization xmi:id="_5YFcoJwZEd-s49wK3mEA6g" name="AbstractFactory" client="_5Uy4EJwZEd-s49wK3mEA6g">
+            <supplier xmi:type="uml:Interface" href="../../../../AbstractFactoryPattern.uml#_5UvNsJwZEd-s49wK3mEA6g"/>
+            <contract href="../../../../AbstractFactoryPattern.uml#_5UvNsJwZEd-s49wK3mEA6g"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_5YGDsJwZEd-s49wK3mEA6g" name="createAddress" visibility="public">
+            <ownedParameter xmi:id="_5YGDsZwZEd-s49wK3mEA6g" name="return" direction="return">
+              <type xmi:type="uml:Class" href="../../../../AbstractFactoryPattern.uml#_5UxC4JwZEd-s49wK3mEA6g"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_5xW4QJwZEd-s49wK3mEA6g" name="USAAddress">
+          <generalization xmi:id="_5yXk4pwZEd-s49wK3mEA6g">
+            <general xmi:type="uml:Class" href="../../../../AbstractFactoryPattern.uml#_5xYtcJwZEd-s49wK3mEA6g"/>
+          </generalization>
+          <ownedOperation xmi:id="_5yYL8JwZEd-s49wK3mEA6g" name="getCountryCode" visibility="package">
+            <ownedParameter xmi:id="_5yYL8ZwZEd-s49wK3mEA6g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6VF3cJwZEd-s49wK3mEA6g" name="USAFactory" clientDependency="_6WMDoJwZEd-s49wK3mEA6g">
+          <interfaceRealization xmi:id="_6WMDoJwZEd-s49wK3mEA6g" name="AbstractFactory" client="_6VF3cJwZEd-s49wK3mEA6g">
+            <supplier xmi:type="uml:Interface" href="../../../../AbstractFactoryPattern.uml#_6VF3cZwZEd-s49wK3mEA6g"/>
+            <contract href="../../../../AbstractFactoryPattern.uml#_6VF3cZwZEd-s49wK3mEA6g"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_6WMDoZwZEd-s49wK3mEA6g" name="createAddress" visibility="public">
+            <ownedParameter xmi:id="_6WMDopwZEd-s49wK3mEA6g" name="return" direction="return">
+              <type xmi:type="uml:Class" href="../../../../AbstractFactoryPattern.uml#_6VHsoJwZEd-s49wK3mEA6g"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
