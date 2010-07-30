@@ -5,5 +5,4 @@ public class USAFactory implements AbstractFactory {
 	public Address createAddress() {
 		return new USAAddress();
 	}
-
 }

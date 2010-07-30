@@ -6,16 +6,12 @@ public abstract class Address {
 	 
 	abstract String getCountryCode();
 	 
-
-
 	/**
 	 * @return the city
 	 */
 	public String getCity() {
 		return city;
 	}
-
-
 
 	/**
 	 * @param city the city to set
@@ -24,8 +20,6 @@ public abstract class Address {
 		this.city = city;
 	}
 
-
-
 	/**
 	 * @return the address
 	 */
@@ -33,16 +27,12 @@ public abstract class Address {
 		return address;
 	}
 
-
-
 	/**
 	 * @param address the address to set
 	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
-
-
 
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()

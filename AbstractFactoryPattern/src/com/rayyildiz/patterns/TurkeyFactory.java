@@ -5,5 +5,4 @@ public class TurkeyFactory implements AbstractFactory {
 	public Address createAddress() {
 		return new TurkeyAddress();
 	}
-
 }
