@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="FactoryMethodDesignPattern">
+  <packagedElement xmi:type="uml:Package" xmi:id="_jET6UKP1Ed-a3f4fYYKSBw" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_jEVvgKP1Ed-a3f4fYYKSBw" name="rayyildiz">
+      <packagedElement xmi:type="uml:Package" xmi:id="_jEVvgaP1Ed-a3f4fYYKSBw" name="patterns">
+        <packagedElement xmi:type="uml:Class" xmi:id="_jEWWkKP1Ed-a3f4fYYKSBw" name="MySqlDbConnection" clientDependency="_jEzCgKP1Ed-a3f4fYYKSBw">
+          <interfaceRealization xmi:id="_jEzCgKP1Ed-a3f4fYYKSBw" name="IDbConnection" client="_jEWWkKP1Ed-a3f4fYYKSBw"/>
+          <ownedOperation xmi:id="_jJQrwKP1Ed-a3f4fYYKSBw" name="getConnection" visibility="public">
+            <ownedParameter xmi:id="_jJQrwaP1Ed-a3f4fYYKSBw" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jEdEQKP1Ed-a3f4fYYKSBw" name="DbConnectionFactory" clientDependency="_0jaOcKP1Ed-a3f4fYYKSBw _1VvqUKP1Ed-a3f4fYYKSBw _13jW4KP1Ed-a3f4fYYKSBw">
+          <generalization xmi:id="_3SoNwKP1Ed-a3f4fYYKSBw" general="_vpXWUKP1Ed-a3f4fYYKSBw"/>
+          <ownedOperation xmi:id="_jJkNwKP1Ed-a3f4fYYKSBw" name="createDbConnection" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_jJkNwaP1Ed-a3f4fYYKSBw" name="dbConnType"/>
+            <ownedParameter xmi:id="_jJkNwqP1Ed-a3f4fYYKSBw" name="return" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jEhVsKP1Ed-a3f4fYYKSBw" name="OracleDbConnection" clientDependency="_jJlb4qP1Ed-a3f4fYYKSBw">
+          <interfaceRealization xmi:id="_jJlb4qP1Ed-a3f4fYYKSBw" name="IDbConnection" client="_jEhVsKP1Ed-a3f4fYYKSBw"/>
+          <ownedOperation xmi:id="_jJmC8KP1Ed-a3f4fYYKSBw" name="getConnection" visibility="public">
+            <ownedParameter xmi:id="_jJmC8aP1Ed-a3f4fYYKSBw" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_lJmy4KP1Ed-a3f4fYYKSBw" name="MssqlDbConnection" clientDependency="_lMcrgqP1Ed-a3f4fYYKSBw">
+          <interfaceRealization xmi:id="_lMcrgqP1Ed-a3f4fYYKSBw" name="IDbConnection" client="_lJmy4KP1Ed-a3f4fYYKSBw">
+            <supplier xmi:type="uml:Interface" href="../../../../FactoryMethodDesignPattern.uml#_lJtgkKP1Ed-a3f4fYYKSBw"/>
+            <contract href="../../../../FactoryMethodDesignPattern.uml#_lJtgkKP1Ed-a3f4fYYKSBw"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_lMcrg6P1Ed-a3f4fYYKSBw" name="getConnection" visibility="public">
+            <ownedParameter xmi:id="_lMcrhKP1Ed-a3f4fYYKSBw" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vpXWUKP1Ed-a3f4fYYKSBw" name="Main">
+          <ownedOperation xmi:id="_vrMiUKP1Ed-a3f4fYYKSBw" name="main" visibility="public" isStatic="true">
+            <ownedComment xmi:id="_vrNwcKP1Ed-a3f4fYYKSBw">
+              <body>/** 
+ * @param args
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_vrMiUaP1Ed-a3f4fYYKSBw" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_0jaOcKP1Ed-a3f4fYYKSBw" name="Dependency1" supplier="_lJmy4KP1Ed-a3f4fYYKSBw" client="_jEdEQKP1Ed-a3f4fYYKSBw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_1VvqUKP1Ed-a3f4fYYKSBw" name="Dependency2" supplier="_jEhVsKP1Ed-a3f4fYYKSBw" client="_jEdEQKP1Ed-a3f4fYYKSBw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_13jW4KP1Ed-a3f4fYYKSBw" name="Dependency3" supplier="_jEWWkKP1Ed-a3f4fYYKSBw" client="_jEdEQKP1Ed-a3f4fYYKSBw"/>
+</uml:Model>
