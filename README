@@ -1,6 +1,6 @@
 Tasarım Desenleri
 
-Yazılım geliştirmse süreciyle uğraşıyorsanız, özellikle nesneye dayalı programlama (Object Oriented Programming)  ile uğraşıyorsanız mutlaka görmüşsünüzdür. Peki tam olarak nedir tasarım desenleri?
+Yazılım geliştirmse süreciyle uğraşıyorsanız, özellikle nesneye dayalı programlama (Object Oriented Programming) ile uğraşıyorsanız mutlaka görmüşsünüzdür. Peki tam olarak nedir tasarım desenleri?
 
 Tasarım desenleri (Design Patterns), bir yazılımın değişik durumlarda nasıl davranabileceğine ışık tutan şablondur. Herhangi bir programa dili bağımlı değildir. Projenizde oluşabilecek durumlar karşısında nasıl bir çözüm bulmanız gerektiği konusunda size ışık tutar. Özellikle daha önce sizin karşılaştığınız sorunların benzerleri için geliştirildiğinden size yardımcı olacaktır. Geliştirdiğiniz uygulama nasıl bir yapıda olduğu, ileride yeni özelliklerin eklenebileceği, farklı platformlarda çalışabilmesi… gibi yeni gelecek özelliklere çok hızlı adapte olabilmek için size bazı şablonlar sunar. Bu sayede, tüm uygulamayı yeniden yazmanız gerek kalmaz.
 
